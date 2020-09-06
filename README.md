@@ -21,8 +21,8 @@ Predicted translatons with probability (Nbest):
 
 It assumes [the general RNN encoder-decoder framework](https://www.tensorflow.org/tutorials/text/nmt_with_attention).
 
-The algorithm is based on the one given in Section 10.2 A^* ("Stack") Decoding in [JM09].
-(https://www.pearson.com/us/higher-education/program/Jurafsky-Speech-and-Language-Processing-2nd-Edition/PGM181706.html)
+The algorithm is based on the one given in Section 10.2 A^* ("Stack") Decoding in [JM09]
+(https://www.pearson.com/us/higher-education/program/Jurafsky-Speech-and-Language-Processing-2nd-Edition/PGM181706.html).
 # Dependencies
 
 * [Tensorflow 2.x](https://www.tensorflow.org/)
