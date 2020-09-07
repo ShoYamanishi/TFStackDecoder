@@ -4,8 +4,8 @@ A stack decoder for Tensorflow 2.x seq2seq models that generates N-Best.
 I made it to retrieve N-best predicted sentences in the descending order of probability.
 The predicited sentences can be similar in terms of edit distance.
 I want the same output always, given the same input, and therefore 
-[tfa.seq2se2.BeamSearchDecoder] (https://www.tensorflow.org/addons/api_docs/python/tfa/seq2seq/BeamSearchDecoder)
-is not suitable a it uses sampling and designed to give variety of outputs.
+[tfa.seq2se2.BeamSearchDecoder](https://www.tensorflow.org/addons/api_docs/python/tfa/seq2seq/BeamSearchDecoder)
+is not suitable, as it uses sampling and designed to give variety of outputs.
 
 The output will look like this:
 ```
@@ -70,7 +70,7 @@ def evaluate_nbest(sentence):
 
   BEAM_WIDTH = 20
   NUM_NBEST = 5
-  MAX_LEN = max_length_targ + 2 # this is defined earlyl in the NMT tutorial.
+  MAX_LEN = max_length_targ + 2 # this is defined early in the NMT tutorial.
                                 # + 2 is for BOS and EOS.
   nbest_list = stack_decoder.NBest( enc_out, enc_hidden, BEAM_WIDTH, NUM_NBEST, MAX_LEN )
 
