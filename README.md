@@ -42,7 +42,7 @@ from TFStackDecoder.stack_decoder import StackDecoder
 from TFStackDecoder.stack_decoder import StackDecoderPath
 
 # This is a replacement to evaluate() defined in the NMT tutorial
-# It does not generate for attention plots.
+# It does not generate data for attention plots.
 # It generates N-best sentences in the descending order of probability.
 
 def evaluate_nbest(sentence):
